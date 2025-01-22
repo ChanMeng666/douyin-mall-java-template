@@ -58,14 +58,14 @@ A comprehensive Spring Boot-based e-commerce platform template with microservice
 
 ## 📚 Table of Contents
 
-- [Prerequisites](#prerequisites)
-- [Project Creation Guide](#project-creation-guide)
-- [Project Structure](#project-structure)
-- [Configuration](#configuration)
-- [Running the Application](#running-the-application)
-- [Common Issues](#common-issues)
-- [Contributing](#contributing)
-- [License](#license)
+- [Prerequisites](#-prerequisites)
+- [Project Creation Guide](#-project-creation-guide)
+- [Project Structure](#-project-structure)
+- [Configuration](#-configuration)
+- [Running the Application](#-running-the-application)
+- [Common Issues](#-common-issues)
+- [Contributing](#-contributing)
+- [License](#-license)
 
 ## 🔧 Prerequisites
 
