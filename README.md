@@ -1,10 +1,63 @@
-# Douyin Mall Java Template
+<div align="center">
+ <h1>🛍️ Douyin Mall Java Template<br/><small>A Production-Ready E-commerce Platform</small></h1>
+ <img src="https://img.shields.io/badge/spring%20boot-3.4.1-brightgreen.svg"/>
+ <img src="https://img.shields.io/badge/JDK-17-blue.svg"/>
+ <img src="https://img.shields.io/badge/maven-3.6%2B-important.svg"/>
+ <img src="https://img.shields.io/badge/mysql-5.7%2B-blue.svg"/>
+ <img src="https://img.shields.io/badge/redis-6.0%2B-red.svg"/>
+</div>
 
-A Spring Boot-based e-commerce platform template project with microservice architecture. This template provides basic project structure and configurations for those who want to start building their own e-commerce application.
+> [!IMPORTANT]
+> This is a production-ready template project built with Spring Boot and microservice architecture. While it demonstrates industry best practices, please thoroughly review and enhance security measures before deploying to production.
 
-## Table of Contents
+# 🌟 Introduction
 
-- [Technology Stack](#technology-stack)
+A comprehensive Spring Boot-based e-commerce platform template with microservice architecture. This project provides a robust foundation for building scalable online shopping applications, incorporating industry-standard practices and modern technologies.
+
+## ✨ Key Features
+
+- 🏗️ **Microservice Architecture** - Built with Spring Cloud Alibaba
+- 🔐 **Security System** - JWT and OAuth2 integration
+- 📦 **Data Management** - JPA and MyBatis support
+- 💾 **Caching Solution** - Redis integration
+- 📨 **Message Queue** - RabbitMQ implementation
+- 🔄 **Gateway** - Spring Cloud Gateway
+- ⚙️ **Service Discovery** - Spring Cloud Eureka
+- 🤖 **AI Integration** - Ready for AI feature development
+- ⏰ **Task Scheduling** - Quartz implementation
+- 📧 **Email Service** - Spring Mail support
+
+## 🛠️ Tech Stack
+
+<div align="center">
+  <table>
+    <tr>
+      <td align="center" width="96">
+        <img src="https://spring.io/images/spring-logo.svg" width="48" height="48" alt="Spring" />
+        <br>Spring Boot
+      </td>
+      <td align="center" width="96">
+        <img src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/mysql/mysql.png" width="48" height="48" alt="MySQL" />
+        <br>MySQL
+      </td>
+      <td align="center" width="96">
+        <img src="https://redis.io/images/redis-small.png" width="48" height="48" alt="Redis" />
+        <br>Redis
+      </td>
+      <td align="center" width="96">
+        <img src="https://www.rabbitmq.com/img/logo-rabbitmq.svg" width="48" height="48" alt="RabbitMQ" />
+        <br>RabbitMQ
+      </td>
+      <td align="center" width="96">
+        <img src="https://raw.githubusercontent.com/github/explore/59009b1589a883459c0ae19044e3e7e3ec0c4e0a/topics/maven/maven.png" width="48" height="48" alt="Maven" />
+        <br>Maven
+      </td>
+    </tr>
+  </table>
+</div>
+
+## 📚 Table of Contents
+
 - [Prerequisites](#prerequisites)
 - [Project Creation Guide](#project-creation-guide)
 - [Project Structure](#project-structure)
@@ -14,57 +67,28 @@ A Spring Boot-based e-commerce platform template project with microservice archi
 - [Contributing](#contributing)
 - [License](#license)
 
-## Technology Stack
+## 🔧 Prerequisites
 
-### Core Framework
-- **Spring Boot**: 3.4.1
-- **JDK**: 17
-- **Build Tool**: Maven 3.6+
+> [!IMPORTANT]
+> Before you begin, ensure you have the following installed:
+> - JDK 17 or later
+> - Maven 3.6+
+> - MySQL 5.7+
+> - IntelliJ IDEA (Recommended)
+> - Git
 
-### Data Storage
-- **MySQL**: 5.7+
-- **Redis**: 6.0+
-- **Spring Data JPA**
-- **MyBatis**
+## 🚀 Project Creation Guide
 
-### Microservice Architecture
-- **Spring Cloud Alibaba**
-- **Spring Cloud Gateway**
-- **Spring Cloud Config**
-- **Spring Cloud Eureka**
+### Step 1: Project Setup
 
-### Message Queue
-- **RabbitMQ**: 3.8+
-
-### Security
-- **Spring Security**
-- **JWT**
-- **OAuth2**
-
-### Others
-- **Docker**: 20.10+
-- **AI Integration Support**
-- **Quartz Scheduler**
-- **Spring Mail**
-
-## Prerequisites
-
-Before you start, ensure you have the following installed:
-- JDK 17 or later
-- Maven 3.6+
-- MySQL 5.7+
-- IDE (Recommended: IntelliJ IDEA)
-- Git
-
-## Project Creation Guide
-
-### Step 1: Create Project Using IntelliJ IDEA
+<details>
+<summary>Create Project Using IntelliJ IDEA</summary>
 
 1. Open IntelliJ IDEA
 2. Click "New Project"
 3. Select "Spring Initializr"
 4. Configure project metadata:
-   ```
+   ```properties
    Group: com.douyinmall
    Artifact: douyin-mall-java-template
    Name: douyin-mall-java-template
@@ -73,44 +97,45 @@ Before you start, ensure you have the following installed:
    Packaging: Jar
    Java version: 17
    ```
+   </details>
 
-### Step 2: Select Dependencies
+<details>
+<summary>Select Dependencies</summary>
 
-Choose the following Spring Boot dependencies:
+#### Core Dependencies
+- Spring Web
+- Spring Boot DevTools
+- Lombok
+- Spring Configuration Processor
 
-1. **Core Dependencies**:
-   - Spring Web
-   - Spring Boot DevTools
-   - Lombok
-   - Spring Configuration Processor
+#### Data Access
+- Spring Data JPA
+- MySQL Driver
+- Spring Data Redis
+- MyBatis Framework
 
-2. **Data Access**:
-   - Spring Data JPA
-   - MySQL Driver
-   - Spring Data Redis
-   - MyBatis Framework
+#### Security
+- Spring Security
+- OAuth2 Resource Server
+- Spring Session
 
-3. **Security**:
-   - Spring Security
-   - OAuth2 Resource Server
-   - Spring Session
+#### Messaging
+- Spring for RabbitMQ
 
-4. **Messaging**:
-   - Spring for RabbitMQ
+#### Cloud Dependencies
+- Eureka Discovery Client
+- Config Client
+- Gateway
+- Resilience4j
 
-5. **Cloud Dependencies**:
-   - Eureka Discovery Client
-   - Config Client
-   - Gateway
-   - Resilience4j
+#### Others
+- Spring Boot Actuator
+- Validation
+- Java Mail Sender
+- Quartz Scheduler
+</details>
 
-6. **Others**:
-   - Spring Boot Actuator
-   - Validation
-   - Java Mail Sender
-   - Quartz Scheduler
-
-### Step 3: Basic Configuration
+### Step 2: Configuration
 
 Create `application.properties` in `src/main/resources`:
 
@@ -141,61 +166,96 @@ spring.autoconfigure.exclude=\
 eureka.client.enabled=false
 ```
 
-### Step 4: Create Database
+### Step 3: Database Setup
 
 ```sql
 CREATE DATABASE douyin_mall CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
 ```
 
-### Step 5: Project Structure
-
-Create the following package structure:
+## 📂 Project Structure
 
 ```
-src/main/java/com/douyinmall/mall
-├── config/
-├── controller/
-├── service/
-│   └── impl/
-├── repository/
-├── entity/
-├── dto/
-├── vo/
-├── utils/
-└── DouyinMallApplication.java
+📦douyin-mall-java-template
+ ┣ 📂src
+ ┃ ┣ 📂main
+ ┃ ┃ ┣ 📂java
+ ┃ ┃ ┃ ┗ 📂com
+ ┃ ┃ ┃ ┃ ┗ 📂douyinmall
+ ┃ ┃ ┃ ┃ ┃ ┗ 📂mall
+ ┃ ┃ ┃ ┃ ┃ ┃ ┗ 📜DouyinMallJavaTemplateApplication.java
+ ┃ ┃ ┗ 📂resources
+ ┃ ┃ ┃ ┣ 📂static
+ ┃ ┃ ┃ ┣ 📂templates
+ ┃ ┃ ┃ ┗ 📜application.properties
+ ┃ ┗ 📂test
+ ┃ ┃ ┗ 📂java
+ ┃ ┃ ┃ ┗ 📂com
+ ┃ ┃ ┃ ┃ ┗ 📂douyinmall
+ ┃ ┃ ┃ ┃ ┃ ┗ 📂mall
+ ┃ ┃ ┃ ┃ ┃ ┃ ┗ 📜DouyinMallJavaTemplateApplicationTests.java
+ ┣ 📂target
+ ┃ ┣ 📂classes
+ ┃ ┃ ┣ 📂com
+ ┃ ┃ ┃ ┗ 📂douyinmall
+ ┃ ┃ ┃ ┃ ┗ 📂mall
+ ┃ ┃ ┃ ┃ ┃ ┗ 📜DouyinMallJavaTemplateApplication.class
+ ┃ ┃ ┗ 📜application.properties
+ ┃ ┣ 📂generated-sources
+ ┃ ┃ ┗ 📂annotations
+ ┃ ┣ 📂generated-test-sources
+ ┃ ┃ ┗ 📂test-annotations
+ ┃ ┗ 📂test-classes
+ ┃ ┃ ┗ 📂com
+ ┃ ┃ ┃ ┗ 📂douyinmall
+ ┃ ┃ ┃ ┃ ┗ 📂mall
+ ┃ ┃ ┃ ┃ ┃ ┗ 📜DouyinMallJavaTemplateApplicationTests.class
+ ┣ 📜.gitattributes
+ ┣ 📜.gitignore
+ ┣ 📜CODE_OF_CONDUCT.md
+ ┣ 📜HELP.md
+ ┣ 📜LICENSE
+ ┣ 📜mvnw
+ ┣ 📜mvnw.cmd
+ ┣ 📜pom.xml
+ ┗ 📜README.md
 ```
 
-## Running the Application
+## 🚀 Running the Application
 
-1. Build the project:
-   ```bash
-   mvn clean package
-   ```
+### Using Maven
 
-2. Run the application:
-   ```bash
-   java -jar target/douyin-mall-java-template-0.0.1-SNAPSHOT.jar
-   ```
+```bash
+# Build the project
+mvn clean package
 
-Or run directly in IDE by running the main class `DouyinMallApplication.java`.
+# Run the application
+java -jar target/douyin-mall-java-template-0.0.1-SNAPSHOT.jar
+```
 
-## Common Issues
+### Using IDE
+Run the main class `DouyinMallApplication.java` directly in your IDE.
 
-### 1. JDK Version Mismatch
-If you see JDK version issues, ensure:
-- JDK 17 is installed
-- Project structure settings use JDK 17
-- Maven compiler settings are configured for Java 17
+## ❗ Common Issues
 
-### 2. Database Connection Issues
-- Verify MySQL is running
-- Check database credentials
-- Ensure database 'douyin_mall' exists
+### JDK Version Mismatch
+> [!TIP]
+> If you encounter JDK version issues:
+> - Verify JDK 17 installation
+> - Check project structure settings
+> - Confirm Maven compiler settings
 
-### 3. Port Conflicts
-If port 8080 is occupied, modify `server.port` in application.properties
+### Database Connection
+> [!NOTE]
+> Common database connection issues:
+> - MySQL service status
+> - Database credentials
+> - Database existence
+> - Port availability
 
-## Contributing
+### Port Conflicts
+If port 8080 is occupied, modify `server.port` in application.properties.
+
+## 🤝 Contributing
 
 1. Fork the repository
 2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
@@ -203,10 +263,20 @@ If port 8080 is occupied, modify `server.port` in application.properties
 4. Push to the branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
 
-## License
+## 📄 License
 
 This project is licensed under the Apache-2.0 License - see the LICENSE.md file for details.
 
+## 🙋‍♀ Author
+
+**Chan Meng**
+- <img src="https://cdn.simpleicons.org/linkedin/0A66C2" width="16" height="16"> LinkedIn: [chanmeng666](https://www.linkedin.com/in/chanmeng666/)
+- <img src="https://cdn.simpleicons.org/github/181717" width="16" height="16"> GitHub: [ChanMeng666](https://github.com/ChanMeng666)
+
 ---
 
-**Note**: This template is designed for educational and reference purposes. Remember to configure proper security measures before deploying to production.
+<div align="center">
+Made with ❤️ for Java developers
+<br/>
+⭐ Star us on GitHub | 📖 Read our Docs | 🐛 Report Issues
+</div>
