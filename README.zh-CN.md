@@ -1,5 +1,5 @@
 <div align="center">
- <h1>🛍️ Douyin Mall Java Template<br/><small>A Production-Ready E-commerce Platform</small></h1>
+ <h1>🛍️ 抖音商城 Java 模板<br/><small>一个生产级电商平台</small></h1>
  <img src="https://img.shields.io/badge/spring%20boot-3.4.1-brightgreen.svg"/>
  <img src="https://img.shields.io/badge/JDK-17-blue.svg"/>
  <img src="https://img.shields.io/badge/maven-3.6%2B-important.svg"/>
@@ -8,28 +8,28 @@
 </div>
 
 > [!IMPORTANT]
-> This is a production-ready template project built with Spring Boot and microservice architecture. While it demonstrates industry best practices, please thoroughly review and enhance security measures before deploying to production.
+> 这是一个基于 Spring Boot 和微服务架构构建的生产级模板项目。虽然它展示了行业最佳实践，但在部署到生产环境之前，请务必全面审查和加强安全措施。
 
 [English](README.md) | [简体中文](README.zh-CN.md)
 
-# 🌟 Introduction
+# 🌟 简介
 
-A comprehensive Spring Boot-based e-commerce platform template with microservice architecture. This project provides a robust foundation for building scalable online shopping applications, incorporating industry-standard practices and modern technologies.
+这是一个基于 Spring Boot 的综合性电商平台模板，采用微服务架构。该项目为构建可扩展的在线购物应用程序提供了强大的基础，整合了行业标准实践和现代技术。
 
-## ✨ Key Features
+## ✨ 核心特性
 
-- 🏗️ **Microservice Architecture** - Built with Spring Cloud Alibaba
-- 🔐 **Security System** - JWT and OAuth2 integration
-- 📦 **Data Management** - JPA and MyBatis support
-- 💾 **Caching Solution** - Redis integration
-- 📨 **Message Queue** - RabbitMQ implementation
-- 🔄 **Gateway** - Spring Cloud Gateway
-- ⚙️ **Service Discovery** - Spring Cloud Eureka
-- 🤖 **AI Integration** - Ready for AI feature development
-- ⏰ **Task Scheduling** - Quartz implementation
-- 📧 **Email Service** - Spring Mail support
+- 🏗️ **微服务架构** - 基于 Spring Cloud Alibaba 构建
+- 🔐 **安全系统** - JWT 和 OAuth2 集成
+- 📦 **数据管理** - 支持 JPA 和 MyBatis
+- 💾 **缓存方案** - Redis 集成
+- 📨 **消息队列** - RabbitMQ 实现
+- 🔄 **网关** - Spring Cloud Gateway
+- ⚙️ **服务发现** - Spring Cloud Eureka
+- 🤖 **AI 集成** - 已具备 AI 功能开发准备
+- ⏰ **任务调度** - Quartz 实现
+- 📧 **邮件服务** - Spring Mail 支持
 
-## 🛠️ Tech Stack
+## 🛠️ 技术栈
 
 <div align="center">
   <table>
@@ -58,43 +58,43 @@ A comprehensive Spring Boot-based e-commerce platform template with microservice
   </table>
 </div>
 
-## 📚 Table of Contents
+## 📚 目录
 
-- [Prerequisites](#-prerequisites)
-- [Project Creation Guide](#-project-creation-guide)
-- [Project Structure](#-project-structure)
-- [Configuration](#-configuration)
-- [Running the Application](#-running-the-application)
-- [Common Issues](#-common-issues)
-- [Contributing](#-contributing)
-- [License](#-license)
+- [环境要求](#-环境要求)
+- [项目创建指南](#-项目创建指南)
+- [项目结构](#-项目结构)
+- [配置说明](#-配置说明)
+- [运行应用](#-运行应用)
+- [常见问题](#-常见问题)
+- [贡献指南](#-贡献指南)
+- [许可证](#-许可证)
 
-## 🔧 Prerequisites
+## 🔧 环境要求
 
 > [!IMPORTANT]
-> Before you begin, ensure you have the following installed:
-> - JDK 17 or later
+> 开始之前，请确保已安装以下软件：
+> - JDK 17 或更高版本
 > - Maven 3.6+
 > - MySQL 5.7+
-> - IntelliJ IDEA (Recommended)
+> - IntelliJ IDEA (推荐)
 > - Git
 
-## 🚀 Project Creation Guide
+## 🚀 项目创建指南
 
-### Step 1: Project Setup
+### 步骤 1：项目设置
 
 <details>
-<summary>Create Project Using IntelliJ IDEA</summary>
+<summary>使用 IntelliJ IDEA 创建项目</summary>
 
-1. Open IntelliJ IDEA
-2. Click "New Project"
-3. Select "Spring Initializr"
-4. Configure project metadata:
+1. 打开 IntelliJ IDEA
+2. 点击"新建项目"
+3. 选择"Spring Initializr"
+4. 配置项目元数据：
    ```properties
    Group: com.douyinmall
    Artifact: douyin-mall-java-template
    Name: douyin-mall-java-template
-   Description: Douyin Mall Java Template Project
+   Description: 抖音商城 Java 模板项目
    Package name: com.douyinmall.mall
    Packaging: Jar
    Java version: 17
@@ -102,51 +102,51 @@ A comprehensive Spring Boot-based e-commerce platform template with microservice
    </details>
 
 <details>
-<summary>Select Dependencies</summary>
+<summary>选择依赖</summary>
 
-#### Core Dependencies
+#### 核心依赖
 - Spring Web
 - Spring Boot DevTools
 - Lombok
 - Spring Configuration Processor
 
-#### Data Access
+#### 数据访问
 - Spring Data JPA
 - MySQL Driver
 - Spring Data Redis
 - MyBatis Framework
 
-#### Security
+#### 安全
 - Spring Security
 - OAuth2 Resource Server
 - Spring Session
 
-#### Messaging
+#### 消息
 - Spring for RabbitMQ
 
-#### Cloud Dependencies
+#### 云服务依赖
 - Eureka Discovery Client
 - Config Client
 - Gateway
 - Resilience4j
 
-#### Others
+#### 其他
 - Spring Boot Actuator
 - Validation
 - Java Mail Sender
 - Quartz Scheduler
 </details>
 
-### Step 2: Configuration
+### 步骤 2：配置
 
-Create `application.properties` in `src/main/resources`:
+在 `src/main/resources` 中创建 `application.properties`：
 
 ```properties
-# Application
+# 应用
 spring.application.name=douyin-mall
 server.port=8080
 
-# Database
+# 数据库
 spring.datasource.url=jdbc:mysql://localhost:3306/douyin_mall?useUnicode=true&characterEncoding=utf8&serverTimezone=Asia/Shanghai
 spring.datasource.username=root
 spring.datasource.password=your_password
@@ -158,7 +158,7 @@ spring.jpa.show-sql=true
 spring.jpa.hibernate.ddl-auto=update
 spring.jpa.open-in-view=false
 
-# Disable Services Initially
+# 初始禁用服务
 spring.autoconfigure.exclude=\
   org.springframework.boot.autoconfigure.data.redis.RedisAutoConfiguration,\
   org.springframework.boot.autoconfigure.data.redis.RedisRepositoriesAutoConfiguration,\
@@ -168,13 +168,13 @@ spring.autoconfigure.exclude=\
 eureka.client.enabled=false
 ```
 
-### Step 3: Database Setup
+### 步骤 3：数据库设置
 
 ```sql
 CREATE DATABASE douyin_mall CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
 ```
 
-## 📂 Project Structure
+## 📂 项目结构
 
 ```
 📦douyin-mall-java-template
@@ -197,20 +197,9 @@ CREATE DATABASE douyin_mall CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
  ┃ ┃ ┃ ┃ ┃ ┃ ┗ 📜DouyinMallJavaTemplateApplicationTests.java
  ┣ 📂target
  ┃ ┣ 📂classes
- ┃ ┃ ┣ 📂com
- ┃ ┃ ┃ ┗ 📂douyinmall
- ┃ ┃ ┃ ┃ ┗ 📂mall
- ┃ ┃ ┃ ┃ ┃ ┗ 📜DouyinMallJavaTemplateApplication.class
- ┃ ┃ ┗ 📜application.properties
  ┃ ┣ 📂generated-sources
- ┃ ┃ ┗ 📂annotations
  ┃ ┣ 📂generated-test-sources
- ┃ ┃ ┗ 📂test-annotations
  ┃ ┗ 📂test-classes
- ┃ ┃ ┗ 📂com
- ┃ ┃ ┃ ┗ 📂douyinmall
- ┃ ┃ ┃ ┃ ┗ 📂mall
- ┃ ┃ ┃ ┃ ┃ ┗ 📜DouyinMallJavaTemplateApplicationTests.class
  ┣ 📜.gitattributes
  ┣ 📜.gitignore
  ┣ 📜CODE_OF_CONDUCT.md
@@ -222,54 +211,54 @@ CREATE DATABASE douyin_mall CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
  ┗ 📜README.md
 ```
 
-## 🚀 Running the Application
+## 🚀 运行应用
 
-### Using Maven
+### 使用 Maven
 
 ```bash
-# Build the project
+# 构建项目
 mvn clean package
 
-# Run the application
+# 运行应用
 java -jar target/douyin-mall-java-template-0.0.1-SNAPSHOT.jar
 ```
 
-### Using IDE
-Run the main class `DouyinMallApplication.java` directly in your IDE.
+### 使用 IDE
+直接在 IDE 中运行主类 `DouyinMallApplication.java`。
 
-## ❗ Common Issues
+## ❗ 常见问题
 
-### JDK Version Mismatch
+### JDK 版本不匹配
 > [!TIP]
-> If you encounter JDK version issues:
-> - Verify JDK 17 installation
-> - Check project structure settings
-> - Confirm Maven compiler settings
+> 如果遇到 JDK 版本问题：
+> - 验证 JDK 17 安装情况
+> - 检查项目结构设置
+> - 确认 Maven 编译器设置
 
-### Database Connection
+### 数据库连接
 > [!NOTE]
-> Common database connection issues:
-> - MySQL service status
-> - Database credentials
-> - Database existence
-> - Port availability
+> 常见数据库连接问题：
+> - MySQL 服务状态
+> - 数据库凭证
+> - 数据库是否存在
+> - 端口可用性
 
-### Port Conflicts
-If port 8080 is occupied, modify `server.port` in application.properties.
+### 端口冲突
+如果端口 8080 被占用，请修改 application.properties 中的 `server.port`。
 
-## 🤝 Contributing
+## 🤝 贡献指南
 
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
+1. Fork 本仓库
+2. 创建特性分支 (`git checkout -b feature/AmazingFeature`)
+3. 提交更改 (`git commit -m '添加一些功能'`)
+4. 推送到分支 (`git push origin feature/AmazingFeature`)
+5. 提交 Pull Request
 
-## 📄 License
+## 📄 许可证
 
-This project is licensed under the Apache-2.0 License - see the LICENSE.md file for details.
+本项目采用 Apache-2.0 许可证 - 详见 LICENSE.md 文件。
 
-## 🙋‍♀ Author
+## 🙋‍♀ 作者
 
 **Chan Meng**
 - <img src="https://cdn.simpleicons.org/linkedin/0A66C2" width="16" height="16"> LinkedIn: [chanmeng666](https://www.linkedin.com/in/chanmeng666/)
@@ -278,7 +267,7 @@ This project is licensed under the Apache-2.0 License - see the LICENSE.md file 
 ---
 
 <div align="center">
-Made with ❤️ for Java developers
+用 ❤️ 为 Java 开发者打造
 <br/>
-⭐ Star us on GitHub | 📖 Read our Docs | 🐛 Report Issues
+⭐ 在 GitHub 上为我们点星 | 📖 阅读文档 | 🐛 报告问题
 </div>
