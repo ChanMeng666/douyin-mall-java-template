@@ -33,23 +33,23 @@ A comprehensive Spring Boot-based e-commerce platform template with microservice
   <table>
     <tr>
       <td align="center" width="96">
-        <img src="https://spring.io/images/spring-logo.svg" width="48" height="48" alt="Spring" />
+        <img src="https://cdn.simpleicons.org/spring/6DB33F" width="48" height="48" alt="Spring" />
         <br>Spring Boot
       </td>
       <td align="center" width="96">
-        <img src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/mysql/mysql.png" width="48" height="48" alt="MySQL" />
+        <img src="https://cdn.simpleicons.org/mysql/4479A1" width="48" height="48" alt="MySQL" />
         <br>MySQL
       </td>
       <td align="center" width="96">
-        <img src="https://redis.io/images/redis-small.png" width="48" height="48" alt="Redis" />
+        <img src="https://cdn.simpleicons.org/redis/DC382D" width="48" height="48" alt="Redis" />
         <br>Redis
       </td>
       <td align="center" width="96">
-        <img src="https://www.rabbitmq.com/img/logo-rabbitmq.svg" width="48" height="48" alt="RabbitMQ" />
+        <img src="https://cdn.simpleicons.org/rabbitmq/FF6600" width="48" height="48" alt="RabbitMQ" />
         <br>RabbitMQ
       </td>
       <td align="center" width="96">
-        <img src="https://raw.githubusercontent.com/github/explore/59009b1589a883459c0ae19044e3e7e3ec0c4e0a/topics/maven/maven.png" width="48" height="48" alt="Maven" />
+        <img src="https://cdn.simpleicons.org/apachemaven/C71A36" width="48" height="48" alt="Maven" />
         <br>Maven
       </td>
     </tr>
