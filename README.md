@@ -12,7 +12,7 @@ One-click **FREE** deployment of your e-commerce platform.
 
 <br/>
 
-[![🚀 Try Live Demo 🚀](https://gradient-svg-generator.vercel.app/api/svg?text=%F0%9F%9A%80Try%20Live%20Demo%F0%9F%9A%80&color=4285F4&height=60&gradientType=radial&duration=6s&color0=ffffff&template=spring-gradient)][demo-link]
+[![🚀 Try Live Demo 🚀](https://gradient-svg-generator.vercel.app/api/svg?text=%F0%9F%9A%80Visit%20Live%20Site%F0%9F%9A%80&color=000000&height=60&gradientType=radial&duration=6s&color0=ffffff&template=pride-rainbow)][demo-link]
 
 <br/>
 

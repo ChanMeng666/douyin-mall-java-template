@@ -12,7 +12,7 @@
 
 <br/>
 
-[![🚀 体验在线演示 🚀](https://gradient-svg-generator.vercel.app/api/svg?text=%F0%9F%9A%80%E4%BD%93%E9%AA%8C%E5%9C%A8%E7%BA%BF%E6%BC%94%E7%A4%BA%F0%9F%9A%80&color=4285F4&height=60&gradientType=radial&duration=6s&color0=ffffff&template=spring-gradient)][demo-link]
+[![🚀 体验在线演示 🚀](https://gradient-svg-generator.vercel.app/api/svg?text=%F0%9F%9A%80Visit%20Live%20Site%F0%9F%9A%80&color=000000&height=60&gradientType=radial&duration=6s&color0=ffffff&template=pride-rainbow)][demo-link]
 
 <br/>
 
