@@ -1138,7 +1138,7 @@ git checkout -b feature/your-awesome-feature
 - <img src="https://cdn.simpleicons.org/linkedin/0A66C2" width="16" height="16"> LinkedIn: [chanmeng666](https://www.linkedin.com/in/chanmeng666/)
 - <img src="https://cdn.simpleicons.org/github/181717" width="16" height="16"> GitHub: [ChanMeng666](https://github.com/ChanMeng666)
 - <img src="https://cdn.simpleicons.org/gmail/EA4335" width="16" height="16"> 邮箱: [chanmeng.dev@gmail.com](mailto:chanmeng.dev@gmail.com)
-- <img src="https://cdn.simpleicons.org/internetexplorer/0078D4" width="16" height="16"> 网站: [chanmeng.live](https://2d-portfolio-eta.vercel.app/)
+- <img src="https://cdn.simpleicons.org/internetexplorer/0078D4" width="16" height="16"> 网站: [chanmeng.org](https://chanmeng.org/)
 
 **联系信息：**
 - 📧 **邮箱**: [chanmeng.dev@gmail.com](mailto:chanmeng.dev@gmail.com)
